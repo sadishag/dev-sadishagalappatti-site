@@ -43,7 +43,7 @@ const timelineElements = [
       "Created a New Relic application monitoring dashboard from all micro services in Advisor Portal product suite",
       "Conducted code reviews of junior team members and peers",
     ],
-    buttonText: "advisor.manlife.ca",
+    buttonText: "advisor.manulife.ca",
     date: "July 2019 - September 2021",
     icon: "work",
     technologyUsed: [
