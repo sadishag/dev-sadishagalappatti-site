@@ -12,7 +12,7 @@ const Section = () => {
       <Timeline timelineElements={timelineElements} />
       <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: sadishag@gmail.com</p>
+        <p>Email: </p>
         <p>
           LinkedIn:{" "}
           <a
