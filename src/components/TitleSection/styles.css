@@ -1,0 +1,13 @@
+.title-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-color: rgb(86, 52, 187); */
+}
+
+.name-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
