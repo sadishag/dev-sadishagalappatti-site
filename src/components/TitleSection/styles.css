@@ -15,11 +15,10 @@
 .icon-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 a {
   text-decoration: none;
   color: #FFFFFF;
-
 }
