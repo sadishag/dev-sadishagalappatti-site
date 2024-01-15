@@ -14,7 +14,7 @@ Now I'm not the most frontend savvy software developer but I do know my way arou
 
 ## Site Details
 
-| Environment | URL + Path                             | Github REPO                                                          | Description                                                                              |
-| ----------- | -------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| DEV/QA      | https://sadishagalappatti.ca/test-site | [test-site](https://github.com/sadishag/test-site)                   | DEV/QA build of [sadishag.github.io](https://github.com/sadishag/sadishag.github.io)     |
-| PROD        | https://sadishagalappatti.ca           | [sadishag.github.io](https://github.com/sadishag/sadishag.github.io) | PRODUCTION Build of [sadishag.github.io](https://github.com/sadishag/sadishag.github.io) |
+| Environment | URL + Path                                          | Github REPO                                                                  | Description                                                                              |
+| ----------- | --------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| DEV/QA      | https://sadishagalappatti.ca/dev.sadishag.github.io | [dev.sadishag.github.io](https://github.com/sadishag/dev.sadishag.github.io) | DEV/QA build of [sadishag.github.io](https://github.com/sadishag/sadishag.github.io)     |
+| PROD        | https://sadishagalappatti.ca                        | [sadishag.github.io](https://github.com/sadishag/sadishag.github.io)         | PRODUCTION Build of [sadishag.github.io](https://github.com/sadishag/sadishag.github.io) |
