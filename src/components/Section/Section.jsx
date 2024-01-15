@@ -10,21 +10,6 @@ const Section = () => {
     <>
       <AboutMe />
       <Timeline timelineElements={timelineElements} />
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: </p>
-        <p>
-          LinkedIn:{" "}
-          <a
-            href="https://www.linkedin.com/in/sadishag"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            sadishag
-          </a>
-        </p>
-        {/* Add more contact information or social media links as needed */}
-      </section>
     </>
   );
 };
