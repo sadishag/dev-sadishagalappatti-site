@@ -14,8 +14,8 @@ const TitleSection = () => {
     <div className="title-section">
       <ProfilePicture />
       <div className="name-title">
-        <h1>Sadisha Galappatti</h1>
-        <p>Full Stack | Cloud | Developer</p>
+        <h1 className="h1-title">Sadisha Galappatti</h1>
+        <p className="p-title">Full Stack | Cloud | Developer</p>
         <div className="icon-bar">
           <a href="resume">
             <FontAwesomeIcon icon={faFilePdf} />
