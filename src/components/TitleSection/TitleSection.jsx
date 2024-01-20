@@ -1,6 +1,6 @@
 import ProfilePicture from "../ProfilePicture/ProfilePicture";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faXTwitter,
@@ -18,7 +18,7 @@ const TitleSection = () => {
         <p className="p-title">Full Stack | Cloud | Developer</p>
         <div className="icon-bar">
           <a href="https://cv.sadishagalappatti.ca">
-            <FontAwesomeIcon icon={faFilePdf} />
+            <FontAwesomeIcon icon={faFile} />
           </a>
           <a href="mailto:sadishag@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} />
