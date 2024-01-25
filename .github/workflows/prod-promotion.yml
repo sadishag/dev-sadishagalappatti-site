@@ -1,0 +1,39 @@
+# Workflow to promote from the dev site to the production site (GH Pages)
+name: Copy files to github.com/sadishag/sadishag.github.io which is the production repo for this site
+
+# only run this workflow when clicked manually
+on:
+  workflow_dispatch:
+    - main
+
+env:
+  BASE_URL: "/" # This is production so there is no context path
+
+jobs:
+  # Step 1: checkout code from sadisahg.github.io
+  # Step 2: copy this into the
+  # Step 3: commit to the sadishag.github.io repo
+
+  copy_files_to_prod_repo:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the sadishag/dev.sadishag.github.io
+      - name: Check out dev.sadishag.github.io
+        uses: actions/checkout@v3
+      # check out the sadishag/sadishag.github.io
+      - name: Check out sadishag.github.io (prod)
+        uses: actions/checkout@v3
+        with:
+          repository: sadishag/sadishag.github.io
+          path: ./sadishag.github.io
+          token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
+      # Make a copy of the dev site and copy it to the prod site making sure to overwrite files and subdirectories
+      - name: Copy repo file system dev -> prod
+        run: bash ./.github/scripts/copy-repo.sh
+        env:
+          DESTINATION_PATH: ./sadishag.github.io
+      # make a branch in sadishag.github.io and push the copied code
+      - name: Push to sadishag.github.io repo
+        run: bash ./.github/scripts/push-to-prod-repo.sh
+        env:
+          BRANCH: feature/prod-deployment
