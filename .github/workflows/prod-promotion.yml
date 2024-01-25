@@ -4,7 +4,6 @@ name: Copy files to github.com/sadishag/sadishag.github.io which is the producti
 # only run this workflow when clicked manually
 on:
   workflow_dispatch:
-    - main
 
 env:
   BASE_URL: "/" # This is production so there is no context path
