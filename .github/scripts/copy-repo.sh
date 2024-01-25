@@ -11,7 +11,7 @@ function l { # Log a message to the terminal.
 # File to copy from Notehub
 REPO_FS=./dev.sadishag.github.io
 
-EXCLUDES=[".github" ".git" ".DS_Store"]
+EXCLUDES=[".github"]
 
 # if folder exists, copy
 if [ -d "${REPO_FS}" ]; then
