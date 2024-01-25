@@ -10,10 +10,6 @@ env:
   BASE_URL: "/" # This is production so there is no context path
 
 jobs:
-  # Step 1: checkout code from sadisahg.github.io
-  # Step 2: copy this into the
-  # Step 3: commit to the sadishag.github.io repo
-
   copy_files_to_prod_repo:
     runs-on: ubuntu-latest
     steps:
