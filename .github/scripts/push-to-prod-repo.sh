@@ -8,6 +8,8 @@ function l { # Log a message to the terminal.
     echo -e "[${SCRIPT_NAME}] ${1:-}"
 }
 
+set +e
+
 # move to the root the sadishag.github.io repo
 cd "./sadishag.github.io"
 echo "Open root of the prod repo (sadishag.github.io)"
