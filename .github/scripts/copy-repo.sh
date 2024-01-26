@@ -17,7 +17,7 @@ EXCLUDE_STRING=""
 for i in ${EXCLUDES[@]}; do 
   EXCLUDE_STRING+="--exclude '${i}' "
 done
-
+echo ${EXCLUDE_STRING}
 # copy with rsync to use exclude feature
 rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/
 
