@@ -21,6 +21,7 @@ done
 echo ${EXCLUDE_STRING}
 # copy with rsync to use exclude feature
 rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/
+echo "rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/"
 
 
 echo "Repo copied to ${DESTINATION_PATH}"
