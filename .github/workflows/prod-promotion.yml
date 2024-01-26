@@ -36,6 +36,7 @@ jobs:
           DESTINATION_PATH: ./sadishag.github.io
       # make a branch in sadishag.github.io and push the copied code
       - name: Push to sadishag.github.io repo
+        continue-on-error: true
         run: bash ./.github/scripts/push-to-prod-repo.sh
         env:
           BRANCH: feature/prod-deployment
