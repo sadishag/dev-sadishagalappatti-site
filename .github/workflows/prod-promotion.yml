@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
 
       - name: run a bash to see the file system
-        bash: |
+        run: |
           ls -la  
           cd ./sadishag.github.io
           ls -la
