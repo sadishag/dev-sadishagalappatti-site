@@ -14,10 +14,10 @@ jobs:
     steps:
       # Check out the sadishag/dev.sadishag.github.io
       - name: Check out dev.sadishag.github.io
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       # check out the sadishag/sadishag.github.io
       - name: Check out sadishag.github.io (prod)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: sadishag/sadishag.github.io
           path: ./sadishag.github.io
