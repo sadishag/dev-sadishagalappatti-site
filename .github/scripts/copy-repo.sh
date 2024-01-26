@@ -27,4 +27,4 @@ fi
 
 echo "Repo copied to ${DESTINATION_PATH}"
 pwd 
-ls -la ./sadisahg.github.io
+ls -la ./sadishag.github.io
