@@ -22,6 +22,12 @@ jobs:
           repository: sadishag/sadishag.github.io
           path: ./sadishag.github.io
           token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
+
+      - name: run a bash to see the file system
+        bash: |
+          ls -la  
+          cd ./sadishag.github.io
+          ls -la
       # Make a copy of the dev site and copy it to the prod site making sure to overwrite files and subdirectories
       - name: Copy repo file system dev -> prod
         run: bash ./.github/scripts/copy-repo.sh

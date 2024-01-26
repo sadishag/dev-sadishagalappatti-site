@@ -12,6 +12,8 @@ function l { # Log a message to the terminal.
 cd "./sadishag.github.io"
 echo "Open root of the prod repo (sadishag.github.io)"
 
+echo $(ls -la)
+
 # check if there's already a currently existing feature branch in sadishag.github.io for this branch
 echo "Check if feature branch ${BRANCH} already exists in sadishag.github.io"
 git ls-remote --exit-code --heads origin ${BRANCH} > /dev/null 2>&1
