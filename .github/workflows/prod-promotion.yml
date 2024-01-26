@@ -33,3 +33,4 @@ jobs:
         run: bash ./.github/scripts/push-to-prod-repo.sh
         env:
           BRANCH: feature/prod-deployment
+          GH_TOKEN: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
