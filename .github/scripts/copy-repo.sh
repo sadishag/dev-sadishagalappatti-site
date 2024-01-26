@@ -20,7 +20,7 @@ for i in ${EXCLUDES[@]}; do
 done
 echo ${EXCLUDE_STRING}
 # copy with rsync to use exclude feature
-rsync -av --exclude '.github' --exclude '.git' --exclude 'sadishag.github.io'   ./ ./sadishag.github.io/
+rsync -av --exclude '.github' --exclude '.git' --exclude 'sadishag.github.io' ./ ./sadishag.github.io/
 echo "rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/"
 
 

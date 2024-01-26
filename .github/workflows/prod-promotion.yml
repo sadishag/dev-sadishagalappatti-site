@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: sadishag/sadishag.github.io
+          ref: "feature/prod-promotion-action"
           path: ./sadishag.github.io
           token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
 
