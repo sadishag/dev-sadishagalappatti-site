@@ -7,7 +7,7 @@ on:
 
 env:
   BASE_URL: "/" # This is production so there is no context path
-  GH_TOKEN: ${{ github.token }}
+  GH_TOKEN: ${{ github.GH_TOKEN }}
 
 jobs:
   copy_files_to_prod_repo:
