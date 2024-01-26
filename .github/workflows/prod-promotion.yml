@@ -33,4 +33,3 @@ jobs:
         run: bash ./.github/scripts/push-to-prod-repo.sh
         env:
           BRANCH: feature/prod-deployment
-          GH_TOKEN: ${{ github.GH_TOKEN }}
