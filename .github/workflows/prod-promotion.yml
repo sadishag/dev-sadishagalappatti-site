@@ -28,6 +28,7 @@ jobs:
           ls -la  
           cd ./sadishag.github.io
           ls -la
+          which rsync
       # Make a copy of the dev site and copy it to the prod site making sure to overwrite files and subdirectories
       - name: Copy repo file system dev -> prod
         run: bash ./.github/scripts/copy-repo.sh
