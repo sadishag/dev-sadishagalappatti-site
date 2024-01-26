@@ -16,7 +16,7 @@ EXCLUDES=(".github" ".git" "sadishag.github.io")
 echo "Copying dev.sadishag.github.io"
 EXCLUDE_STRING=""
 for i in ${EXCLUDES[@]}; do 
-  EXCLUDE_STRING+="--exclude '${i}' "
+  EXCLUDE_STRING+="--exclude='${i}' "
 done
 echo ${EXCLUDE_STRING}
 # copy with rsync to use exclude feature
