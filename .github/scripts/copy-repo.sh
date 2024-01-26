@@ -9,7 +9,7 @@ function l { # Log a message to the terminal.
 }
 
 
-EXCLUDES=(".github" "sadishag.github.io")
+EXCLUDES=(".github/*" ".git/*" "sadishag.github.io/*")
 
 
 echo "Copying dev.sadishag.github.io"
