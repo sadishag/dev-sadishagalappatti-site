@@ -8,6 +8,7 @@ function l { # Log a message to the terminal.
     echo -e "[${SCRIPT_NAME}] ${1:-}"
 }
 
+echo rsync --version
 
 EXCLUDES=(".github" ".git" "sadishag.github.io")
 
