@@ -46,3 +46,6 @@ git commit -am "feat: Update source files to match with dev.sadishag.github.io"
 git push --set-upstream origin ${BRANCH}
 
 echo "Updated repo file successfully pushed to sadishag.github.io repo"
+
+DATE=$(date '+%Y-%m-%d')
+gh pr create --base main --head ${BRANCH} --title "prod-promotion ${DATE}"
