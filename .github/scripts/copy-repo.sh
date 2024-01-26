@@ -11,7 +11,7 @@ function l { # Log a message to the terminal.
 # File to copy from Notehub
 REPO_FS=./dev.sadishag.github.io
 
-EXCLUDES=[".github"]
+EXCLUDES=[".github" "sadishag.github.io"]
 
 # if folder exists, copy
 if [ -d "${REPO_FS}" ]; then
@@ -22,7 +22,9 @@ if [ -d "${REPO_FS}" ]; then
     done
 
     # copy with rsync to use exclude feature
-    rsync -av ${EXCLUDE_STRING} ./dev.sadishag.github.io/ ./sadishag.github.io/
+    rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/
 fi
 
 echo "Repo copied to ${DESTINATION_PATH}"
+pwd 
+ls -la ./sadisahg.github.io
