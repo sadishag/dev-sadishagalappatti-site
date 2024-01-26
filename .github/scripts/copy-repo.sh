@@ -12,7 +12,7 @@ function l { # Log a message to the terminal.
 EXCLUDES=(".github" "sadishag.github.io")
 
 
-echo "Copying ${REPO_FS}"
+echo "Copying dev.sadishag.github.io"
 EXCLUDE_STRING=""
 for i in ${EXCLUDES[@]}; do 
   EXCLUDE_STRING+="--exclude '${i}' "
