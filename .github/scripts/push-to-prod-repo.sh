@@ -32,7 +32,7 @@ if [[ ${EXIT_CODE} == "0" ]]; then
   # check out existing branch from sadishag.github.io
   git checkout ${BRANCH} 
   # overwrite any previous file/folder changes with current ones
-  git checkout stash -- .
+  git stash apply
 else
   echo "Git branch '${BRANCH}' does not exist in the remote repository"
   # create a new branch in sadishag.github.io 
