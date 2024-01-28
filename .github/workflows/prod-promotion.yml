@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: sadishag/sadishag.github.io
-          ref: "feature/prod-promotion-action"
+          ref: "main"
           path: ./sadishag.github.io
           token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
       # Make a copy of the dev site and copy it to the prod site making sure to overwrite files and subdirectories
