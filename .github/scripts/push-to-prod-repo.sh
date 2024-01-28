@@ -8,6 +8,8 @@ function l { # Log a message to the terminal.
     echo -e "[${SCRIPT_NAME}] ${1:-}"
 }
 
+set +e
+
 # move to the root the sadishag.github.io repo
 cd "./sadishag.github.io"
 echo "Open root of the prod repo (sadishag.github.io)"
@@ -30,7 +32,7 @@ if [[ ${EXIT_CODE} == "0" ]]; then
   # check out existing branch from sadishag.github.io
   git checkout ${BRANCH} 
   # overwrite any previous file/folder changes with current ones
-  git checkout stash -- .
+  git stash apply
 else
   echo "Git branch '${BRANCH}' does not exist in the remote repository"
   # create a new branch in sadishag.github.io 
@@ -44,3 +46,6 @@ git commit -am "feat: Update source files to match with dev.sadishag.github.io"
 git push --set-upstream origin ${BRANCH}
 
 echo "Updated repo file successfully pushed to sadishag.github.io repo"
+
+DATE=$(date '+%Y-%m-%d')
+gh pr create --base "master" --head "${BRANCH}" --title "prod-promotion ${DATE}" --body "latest changes to sadishagalappatti.ca"

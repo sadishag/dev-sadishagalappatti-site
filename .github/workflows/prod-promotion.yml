@@ -20,15 +20,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: sadishag/sadishag.github.io
+          ref: "feature/prod-promotion-action"
           path: ./sadishag.github.io
           token: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}
-
-      - name: run a bash to see the file system
-        run: |
-          ls -la  
-          cd ./sadishag.github.io
-          ls -la
-          which rsync
       # Make a copy of the dev site and copy it to the prod site making sure to overwrite files and subdirectories
       - name: Copy repo file system dev -> prod
         run: bash ./.github/scripts/copy-repo.sh
@@ -39,3 +33,4 @@ jobs:
         run: bash ./.github/scripts/push-to-prod-repo.sh
         env:
           BRANCH: feature/prod-deployment
+          GH_TOKEN: ${{ secrets.SADISHAG_GITHUB_IO_TOKEN }}

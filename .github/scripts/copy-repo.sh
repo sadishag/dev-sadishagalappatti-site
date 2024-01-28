@@ -8,22 +8,21 @@ function l { # Log a message to the terminal.
     echo -e "[${SCRIPT_NAME}] ${1:-}"
 }
 
-# File to copy from Notehub
-REPO_FS=./dev.sadishag.github.io
+rsync --version
 
-EXCLUDES=(".github" "sadishag.github.io")
+EXCLUDES=(".github" ".git" "sadishag.github.io")
 
-# if folder exists, copy
-if [ -d "${REPO_FS}" ]; then
-    echo "Copying ${REPO_FS}"
-    EXCLUDE_STRING=""
-    for i in ${EXCLUDES[@]}; do 
-      EXCLUDE_STRING+="--exclude '${i}' "
-    done
 
-    # copy with rsync to use exclude feature
-    rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/
-fi
+echo "Copying dev.sadishag.github.io"
+EXCLUDE_STRING=""
+for i in ${EXCLUDES[@]}; do 
+  EXCLUDE_STRING+="--exclude '${i}' "
+done
+echo ${EXCLUDE_STRING}
+# copy with rsync to use exclude feature
+rsync -av --exclude '.github' --exclude '.git' --exclude 'sadishag.github.io' ./ ./sadishag.github.io/
+echo "rsync -av ${EXCLUDE_STRING} ./ ./sadishag.github.io/"
+
 
 echo "Repo copied to ${DESTINATION_PATH}"
 pwd 

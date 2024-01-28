@@ -10,6 +10,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [svgr(), react()],
-    base: encodeURI(`/${env.BASE_URL}/`),
+    base: encodeURI(`/${env.BASE_URL}`),
   };
 });
