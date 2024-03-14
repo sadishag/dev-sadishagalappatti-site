@@ -12,7 +12,7 @@ const AboutMe = () => {
 
         <p>
           I've immersed myself in the dynamic Toronto tech scene for six years.
-          My journey began with a fascination for coding, which i explored in
+          My journey began with a fascination for coding, which I explored in
           university. Throughout my career, I have honed my skills in various
           aspects of software development.
         </p>
